@@ -11,6 +11,7 @@ header{
     width: 100%;
     position: fixed;
     z-index: 500;
+    height: 50px;
 }
 .container_header{
     position: relative;
@@ -36,6 +37,9 @@ a{
     font-weight: 500;
     font-size: 15px;
 }
+li{
+    list-style: none;
+}
 .fa-solid.fa-grip{
     font-size: 15px;
     font-weight: 700;
@@ -57,7 +61,6 @@ main{
     display: flex;
     justify-content: center;
     padding-top: 80px;
-    height: 100vh;
     /* flex-wrap: wrap; */
 }
 .container_items{
@@ -84,10 +87,44 @@ main{
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    width: auto;
     padding: 5px;
 }
 .photo_footer i
 ,span{
     font-size: 15px;
 }
+footer{
+    width: 100%;
+    padding: 20px 10px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* DEBUG */
+    background-color: red;
+}
+.mic_video{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.element_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-misc{
+    /* flex-grow: 1; */
+    width: 55%;
+}
+.footer-misc ul{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 5px; */
+}
+
+.footer_font_icons{
+    font-size: 30px;
+}
+
