@@ -94,36 +94,55 @@ main{
     font-size: 15px;
 }
 footer{
-    width: 100%;
+    width: 100vw;
     padding: 20px 10px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* DEBUG */
-    background-color: red;
+    background-color: #222222;
+    flex-wrap: nowrap;
+}
+.text_elements{
+    padding-top: 5px;
 }
 .mic_video{
-    width: 20%;
+    flex-basis: 15%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.container_mute{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .element_col{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 .footer-misc{
     /* flex-grow: 1; */
-    width: 55%;
+    flex-basis: 50%;
 }
 .footer-misc ul{
     display: flex;
     justify-content: space-between;
     /* padding: 0px 5px; */
 }
+.fa-share-from-square{
+    color: #4bc800;
+}
+.fa-microsoft{
+    border-radius: 15px;
+}
 
+#end_meeting{
+    flex-basis: 25%;
+    background-color: #5e6870;
+    background-size: 100%;
+}
 .footer_font_icons{
     font-size: 30px;
 }
