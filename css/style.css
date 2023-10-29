@@ -48,7 +48,7 @@ li{
     font-size: 15px;
 }
 .button{
-    
+    cursor: pointer;
     margin-top: 2px;
     display: inline-block;
     background-color: #4a4a4a;
@@ -57,10 +57,10 @@ li{
     color: white;
 }
 main{
-    width: 100vw;
     display: flex;
     justify-content: center;
     padding-top: 80px;
+    align-self: flex-start;
     /* flex-wrap: wrap; */
 }
 .container_items{
@@ -94,14 +94,12 @@ main{
     font-size: 15px;
 }
 footer{
-    width: 100vw;
-    padding: 20px 10px;
+    height: 100vh;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #222222;
-    flex-wrap: nowrap;
 }
 .text_elements{
     padding-top: 5px;
@@ -110,7 +108,7 @@ footer{
     flex-basis: 15%;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    align-items: center;
 }
 .container_mute{
     display: flex;
@@ -121,6 +119,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-height: 0;
 }
 .footer-misc{
     /* flex-grow: 1; */
@@ -147,3 +146,11 @@ footer{
     font-size: 30px;
 }
 
+.end_meeting{
+    background-color: #4a4a4a;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    color: red;
+}
